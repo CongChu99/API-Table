@@ -51,7 +51,7 @@ allDays.forEach((day,index)=>{
 
 
   const result = {}  //Vo Te Ra : lưu giữ các giá trị cao thấp tb trong 1 ngày
-  Object.keys(courses[0]).filter(e=> e!=='_id').forEach(e=>{
+  Object.keys(courses[0]).filter(e=> e!=='t').forEach(e=>{
     const arr = body.map(m => m[e])
     const max = Math.max(...arr)
     const min = Math.min(...arr)
